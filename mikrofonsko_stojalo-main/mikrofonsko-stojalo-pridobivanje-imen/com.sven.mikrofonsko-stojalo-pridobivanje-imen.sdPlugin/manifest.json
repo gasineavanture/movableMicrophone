@@ -1,0 +1,110 @@
+{
+  "Name": "mikrofonsko-stojalo-pridobivanje-imen",
+  "Version": "0.1.0.0",
+  "Author": "sven",
+  "Actions": [
+    {
+      "Name": "Oseba",
+      "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen.oseba",
+      "Icon": "imgs/actions/oseba/icon",
+      "Tooltip": "Prikaže ime osebe in premakne stojalo nanjo ob pritisku.",
+      "PropertyInspectorPath": "ui/oseba.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/oseba/key",
+          "TitleAlignment": "bottom"
+        }
+      ]
+    },
+    {
+      "Name": "Premik fiksno",
+      "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen.premik-fiksno",
+      "Icon": "imgs/actions/premik-fiksno/icon",
+      "Tooltip": "Premakne stojalo za fiksno razdaljo (1cm/5cm gor ali dol).",
+      "PropertyInspectorPath": "ui/premik-fiksno.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/premik-fiksno/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Premik drži",
+      "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen.premik-drzi",
+      "Icon": "imgs/actions/premik-drzi/icon",
+      "Tooltip": "Premika stojalo dokler gumb držiš, ustavi ob spustu.",
+      "PropertyInspectorPath": "ui/premik-drzi.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        { "Image": "imgs/actions/premik-drzi/key", "TitleAlignment": "middle" }
+      ]
+    },
+    {
+      "Name": "Nastavi hitrost",
+      "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen.hitrost",
+      "Icon": "imgs/actions/hitrost/icon",
+      "Tooltip": "Nastavi hitrost premikanja motorja.",
+      "PropertyInspectorPath": "ui/hitrost.html",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/hitrost/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Referenca",
+      "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen.referenca",
+      "Icon": "imgs/actions/referenca/icon",
+      "Tooltip": "Kalibrira referenčno pozicijo stojala.",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/referenca/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    },
+    {
+      "Name": "Reset",
+      "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen.reset",
+      "Icon": "imgs/actions/reset/icon",
+      "Tooltip": "Ponastavi mikrofonsko stojalo.",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/actions/reset/key",
+          "TitleAlignment": "middle"
+        }
+      ]
+    }
+  ],
+  "Category": "mikrofonsko-stojalo-pridobivanje-imen",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "CodePath": "bin/plugin.js",
+  "Description": "pridobitev imen",
+  "Icon": "imgs/plugin/marketplace",
+  "SDKVersion": 3,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "12"
+    },
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "24",
+    "Debug": "enabled"
+  },
+  "UUID": "com.sven.mikrofonsko-stojalo-pridobivanje-imen"
+}
